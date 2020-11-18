@@ -6,3 +6,15 @@
 .AppBarContent{
  justify-content: center;
 }
+
+.ColorRed{
+ background: Red;
+}
+
+.ColorYellow{
+ color: Yellow;
+}
+
+.ColorBlue{
+ background: Blue;
+}
