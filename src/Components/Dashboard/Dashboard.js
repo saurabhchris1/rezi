@@ -27,11 +27,11 @@ const Dashboard = (props) =>{
                 <Grid container spacing={spacing}>
                     <Grid key={1} item>
 
-                        <Button  variant="contained" color="primary">Resumes</Button>
+                        <Button  variant="contained" color="primary" className={props.appColor}>Resumes</Button>
 
                     </Grid>
                     <Grid key={2} item>
-                        <Button  variant="outlined">Cover Letters</Button>
+                        <Button  variant="outlined" >Cover Letters</Button>
                     </Grid>
                 </Grid>
             </Grid>

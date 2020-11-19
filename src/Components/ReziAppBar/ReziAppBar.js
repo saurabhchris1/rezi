@@ -32,19 +32,21 @@ const ReziAppBar = (props) =>{
 
     return(
         <AppBar position="fixed" className={classes.appBar}>
-            <Toolbar className={CustomClasses.AppBarContent}>
-                <IconButton
-                    color="inherit"
-                    aria-label="open drawer"
-                    edge="start"
-                    onClick={props.drawerHandler}
-                    className={classes.menuButton}
-                >
-                    <MenuIcon />
-                </IconButton>
+          <div className={props.navColor}>
+              <Toolbar className={CustomClasses.AppBarContent}>
+                  <IconButton
+                      color="inherit"
+                      aria-label="open drawer"
+                      edge="start"
+                      onClick={props.drawerHandler}
+                      className={classes.menuButton}
+                  >
+                      <MenuIcon />
+                  </IconButton>
 
-                <div className={CustomClasses.AppBarContent}><span>Save 40% off on Rezi Resume Writing with <b>writing_40</b></span></div>
-            </Toolbar>
+                  <div className={CustomClasses.AppBarContent}><span>Save 40% off on Rezi Resume Writing with <b>writing_40</b></span></div>
+              </Toolbar>
+          </div>
         </AppBar>
     );
 

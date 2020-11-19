@@ -53,7 +53,7 @@ const ReziNavigation= (props) => {
                     variant="permanent"
                     open
                 >
-                    <ReziDrawer/>
+                    <ReziDrawer appColor={props.appColor} appName={props.appName}/>
                 </Drawer>
             </Hidden>
         </nav>

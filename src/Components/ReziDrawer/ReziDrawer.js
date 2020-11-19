@@ -21,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
 
 }));
 
-const ReziDrawer = () =>{
+const ReziDrawer = (props) =>{
 
     const classes = useStyles();
 
@@ -30,11 +30,11 @@ const ReziDrawer = () =>{
         <div>
 
             <div className={classes.toolbar} >
-                <Typography className={CustomClasses.SidebarPadding} variant="h3"> Rezi </Typography>
+               <Typography className={CustomClasses.SidebarPadding} variant="h4">{props.appName}</Typography>
             </div>
             <div  className={CustomClasses.SidebarPadding}>
-
-                <Button variant="contained" color="primary">
+                {console.log(props.appColor)}
+                <Button variant="contained" color="primary" className={props.appColor}>
                     Create New Resume
                 </Button>
             </div>

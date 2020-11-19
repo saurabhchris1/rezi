@@ -7,14 +7,18 @@
  justify-content: center;
 }
 
-.ColorRed{
- background: Red;
+.backgroundColorRed{
+ background: Red !important;
 }
 
-.ColorYellow{
- color: Yellow;
+.backgroundColorYellow{
+ background: Yellow !important;
 }
 
-.ColorBlue{
- background: Blue;
+.backgroundColorBlue{
+ background: Purple !important;
+}
+
+.backgroundColorGreen{
+ background: Green !important;
 }
