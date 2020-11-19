@@ -33,7 +33,6 @@ const ReziDrawer = (props) =>{
                <Typography className={CustomClasses.SidebarPadding} variant="h4">{props.appName}</Typography>
             </div>
             <div  className={CustomClasses.SidebarPadding}>
-                {console.log(props.appColor)}
                 <Button variant="contained" color="primary" className={props.appColor}>
                     Create New Resume
                 </Button>

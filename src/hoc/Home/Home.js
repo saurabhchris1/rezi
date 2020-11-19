@@ -5,6 +5,7 @@ import Dashboard from "../../Components/Dashboard/Dashboard";
 import ReziAppBar from "../../Components/ReziAppBar/ReziAppBar";
 import ReziNavigation from "../../Components/ReziNavigation/ReziNavigation";
 import CustomClass from './Home.module.css';
+import ChangeTheme from "../../Components/ChangeTheme/ChangeTheme";
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -29,7 +30,28 @@ const Home = (props) =>{
     const [backgroundColor, setBackgroundColor] = React.useState(CustomClass.backgroundColorBlue);
     const [appName, setAppName] = React.useState("Your Name")
 
-    let value = 0;
+    const [color, setColor] = React.useState(0);
+    const [name, setName] = React.useState("Your Name");
+
+    const handleThemeChange = (event) => {
+        setColor(event.target.value);
+
+    };
+
+    const handleNameChange = (event) => {
+        setName(event.target.value);
+
+    };
+
+    const formSubmitHandler = (event) => {
+        event.preventDefault();
+        changeColorHandler(color)
+        setAppName(name)
+
+
+    }
+
+
 
     const changeColorHandler = (value)=> {
         switch (value) {
@@ -72,7 +94,7 @@ const Home = (props) =>{
                 <div className={classes.toolbar} />
 
                 <Dashboard appColor={backgroundColor}/>
-
+                <ChangeTheme handelThemechange={handleThemeChange} handleNameChange={handleNameChange} formSubmitHandler={formSubmitHandler} color={color}/>
 
             </main>
         </div>
